@@ -1,0 +1,203 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+LICENSE = LGPL
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = 613cab05-c333-4e68-8f40-add08f9a2586
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = 20241007
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+ICON = Mongolian-Phonetic.svg
+
+### The default name of this table, this is needed
+NAME = Mongolian-Phonetic
+
+### Description
+DESCRIPTION = Mongolian phonetic input engine table for IBus Table.
+
+LANGUAGES = mn
+
+### The author of this table
+AUTHOR = Amgaa G.
+
+### Prompt string to be displayed in the status area, CN will be replaced by
+### the gettext tools in runtime as 中.
+STATUS_PROMPT = Мон
+
+### Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ"'
+
+### Layout
+LAYOUT = us
+
+### The max number of input keys for every phrase or character.
+MAX_KEY_LENGTH = 2
+
+### Use auto_commit mode as default
+AUTO_COMMIT = TRUE
+AUTO_SELECT = TRUE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = FALSE
+### Not use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = FALSE 
+
+### Some characters whose frequencies should be fix all the time, e.g. 
+### some punctuations
+### NO_CHECK_CHARS = 
+
+### Rules for constructing user defined phrase
+### "ce" stands for "ci equal", a Chinese English :), means "phrase length
+### equal to", thus ce2 -> phrase length equal to 2; and "ca" means "phrase
+### length equal or above", so ca4 -> phrase length equal or above 4.
+### p21 -> the 1st key of 2nd character in the phrase, and so on.
+### Each rule separate via ";". 
+### Example below is a complete rule-set, 
+### becuase [2,2] ∩ [3,3] ∩ [4,+∞] = [2,+∞], which is the range of length
+### of phrase. This have to be satisfied if you need ibus-table to build up
+### your own inputed phrase via your daily using.
+### RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p22+p31;ca4:p11+p21+p31+p41
+
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+BEGIN_TABLE
+a	а	1
+A	А	1
+b	б	1
+B	Б	1
+v	в	1
+V	В	1
+g	г	1
+G	Г	1
+d	д	1
+D	Д	1
+ye	е	1
+Ye	Е	1
+YE	Е	1
+yo	ё	1
+Yo	Ё	1
+YO	Ё	1
+j	ж	1
+J	Ж	1
+z	з	1
+Z	З	1
+i	и	1
+I	И	1
+i	й	1
+I	Й	1
+k	к	1
+K	К	1
+l	л	1
+L	Л	1
+m	м	1
+M	М	1
+n	н	1
+N	Н	1
+o	о	1
+O	О	1
+q	ө	1
+Q	Ө	1
+p	п	1
+P	П	1
+r	р	1
+R	Р	1
+S	С	1
+s	с	1
+t	т	1
+T	Т	1
+u	у	1
+U	У	1
+w	ү	1
+W	Ү	1
+f	ф	1
+F	Ф	1
+h	х	1
+H	Х	1
+x	х	1
+X	Х	1
+ts	ц	1
+Ts	Ц	1
+TS	Ц	1
+c	ц	1
+C	Ц	1
+ch	ч	1
+Ch	Ч	1
+CH	Ч	1
+sh	ш	1
+Sh	Ш	1
+SH	Ш	1
+"	ъ	1
+""	Ъ	1
+y	ы	1
+Y	Ы	1
+'	ь	1
+''	Ь	1
+e	э	1
+E	Э	1
+yu	ю	1
+Yu	Ю	1
+YU	Ю	1
+ya	я	1
+Ya	Я	1
+YA	Я	1
+ai	ай	1
+Ai	Ай	1
+AI	АЙ	1
+ei	эй	1
+Ei	Эй	1
+EI	ЭЙ	1
+oi	ой	1
+Oi	Ой	1
+OI	ОЙ	1
+ui	уй	1
+Ui	Уй	1
+UI	УЙ	1
+qi	өй	1
+Qi	Өй	1
+QI	ӨЙ	1
+wi	үй	1
+Wi	Үй	1
+WI	ҮЙ	1
+ii	ий	1
+Ii	Ий	1
+II	ИИ	1
+END_TABlE
