@@ -1,5 +1,5 @@
 # Mongolian-phonetic keyboard layout for IBus/Ubuntu
-==========================================
+
 
 Яг Латин үсгээр бичиж байгаа юм шиг криллээр бичих Ubuntu (бусад linux) зориулсан
 keyboard layout.  
