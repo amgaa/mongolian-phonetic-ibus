@@ -1,4 +1,4 @@
-# mongolian-phonetic-ibus
+# Mongolian-phonetic keyboard layout for IBus/Ubuntu
 ==========================================
 Яг Латин үсгээр бичиж байгаа юм шиг криллээр бичих Ubuntu (бусад linux) зориулсан
 keyboard layout.  
@@ -49,3 +49,5 @@ ibus-setup
 3: Үйлдлийн системийнхээ Keyboard Settings хэсгийн, Keyboard Input Sources хэсэгт  Mongolian-Phonetics-г нэмнэ. 
 
 Voila!
+
+Жич: Уг layout-г Ubuntu 24.04 дээр туршиж үзсэн болно. 
