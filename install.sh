@@ -44,4 +44,4 @@ ibus-daemon -drx
 
 echo "Installation complete. Now you should"
 echo "        1) add Mongolian-Phonetic as an input method in your ibus by running ibus-setup"
-echo "        2) then, add Mongolian-Phonetic as a new keyboard insput source in you keyboard settings."
+echo "        2) then, add Mongolian-Phonetic as a new keyboard input source in you keyboard settings."
