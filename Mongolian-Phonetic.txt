@@ -43,7 +43,7 @@ AUTHOR = Amgaa G.
 STATUS_PROMPT = Мон
 
 ### Valid input chars.
-VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ"'
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"'
 
 ### Layout
 LAYOUT = us
